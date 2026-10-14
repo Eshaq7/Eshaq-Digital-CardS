@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#061c35" />
+    <meta name="description" content="Premium digital contact card for Abdullah Zaid Eshaq." />
+    <title>Abdullah Zaid Eshaq | Premium Digital Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="general-manager.css?v=2" />
+    <script src="https://code.iconify.design/iconify-icon/2.3.0/iconify-icon.min.js"></script>
+  </head>
+  <body>
+    <main class="page-shell">
+      <article class="royal-card" id="card" aria-label="Premium digital business card for Abdullah Zaid Eshaq">
+        <span class="layer layer-left"></span><span class="layer layer-right"></span><span class="layer layer-gold"></span>
+        <span class="top-line"></span><span class="line-texture"></span>
+
+        <header class="topbar">
+          <p id="digitalLabel"><i></i>Digital contact</p>
+          <div class="top-actions">
+            <button class="language-toggle" id="languageToggle" type="button" aria-label="Switch card to Arabic" title="العربية"><iconify-icon icon="solar:global-bold"></iconify-icon><b>AR</b></button>
+            <button id="share" type="button" aria-label="Share this contact card"><iconify-icon icon="solar:share-bold"></iconify-icon></button>
+          </div>
+        </header>
+
+        <button class="qr-card" id="qrTrigger" type="button" aria-label="Show card QR code">
+          <img id="qrImage" alt="QR code for Abdullah Zaid Eshaq digital contact card" />
+          <span><b id="qrLabel">Share</b><iconify-icon icon="solar:share-bold"></iconify-icon></span>
+        </button>
+
+        <section class="brand-area">
+          <div class="logo-disc"><img src="assets/logo.png" alt="Eshaq Trading Company logo" /></div>
+        </section>
+
+        <section class="identity-panel">
+          <h1 id="personName">Abdullah Zaid <span>Eshaq</span></h1>
+          <div class="divider"><i></i><b></b><i></i></div>
+          <p class="role" id="personRole">General Manager</p>
+          <p class="company" id="companyName">Eshaq Trading Company</p>
+        </section>
+
+        <section class="contact-list" aria-label="Contact information">
+          <a class="contact-row" href="tel:+962789992880" data-kind="phone"><span><iconify-icon icon="solar:phone-calling-bold"></iconify-icon></span><strong>+962 7 8999 2880</strong></a>
+          <a class="contact-row" href="https://wa.me/962789992880" target="_blank" rel="noreferrer" data-kind="whatsapp"><span><iconify-icon icon="fa6-brands:whatsapp"></iconify-icon></span><strong>+962 7 8999 2880</strong></a>
+          <a class="contact-row" href="mailto:management@eshaqltd.com" data-kind="email"><span><iconify-icon icon="solar:letter-bold"></iconify-icon></span><strong>management@eshaqltd.com</strong></a>
+          <a class="contact-row" href="https://eshaqltd.com" target="_blank" rel="noreferrer" data-kind="website"><span><iconify-icon icon="solar:global-bold"></iconify-icon></span><strong>www.eshaqltd.com</strong></a>
+          <a class="contact-row" href="https://maps.google.com/?q=Sana%27a%2C%20Yemen" target="_blank" rel="noreferrer" data-kind="location"><span><iconify-icon icon="solar:map-point-bold"></iconify-icon></span><strong id="locationValue">Yemen, Sana’a</strong></a>
+        <a class="contact-row" href="https://maps.google.com/?q=Aden%2C%20Yemen" target="_blank" rel="noreferrer" data-kind="branch"><span><iconify-icon icon="solar:buildings-bold"></iconify-icon></span><strong id="branchValue">Branch: Aden, Yemen</strong></a>
+        </section>
+
+        <a class="save-contact" id="saveContact" href="general-manager.vcf" download>Save contact</a>
+        <button class="wechat-button" id="wechat" type="button">
+          <span class="wechat-icon"><iconify-icon icon="fa6-brands:weixin"></iconify-icon></span>
+          <span><small id="availability">Available for business</small><b id="wechatLabel">Add on WeChat</b></span>
+          <iconify-icon class="arrow" icon="solar:arrow-up-right-bold"></iconify-icon>
+        </button>
+      </article>
+
+      <dialog class="qr-dialog" id="qrDialog" aria-labelledby="qrTitle">
+        <button class="close" id="qrClose" type="button" aria-label="Close QR code"><iconify-icon icon="solar:close-circle-bold"></iconify-icon></button>
+        <iconify-icon class="dialog-icon" icon="solar:qr-code-bold"></iconify-icon>
+        <h2 id="qrTitle">Scan to open my card</h2><p id="qrDescription">Point your camera at this code to open this digital contact.</p>
+        <div><img id="dialogQrImage" alt="QR code for this contact card" /></div>
+        <small id="qrUrl"></small>
+      </dialog>
+      <dialog class="qr-dialog wechat-dialog" id="wechatDialog" aria-labelledby="wechatQrTitle">
+        <button class="close" id="wechatQrClose" type="button" aria-label="Close WeChat QR code"><iconify-icon icon="solar:close-circle-bold"></iconify-icon></button>
+        <iconify-icon class="dialog-icon" icon="fa6-brands:weixin"></iconify-icon>
+        <h2 id="wechatQrTitle">Scan to add on WeChat</h2><p id="wechatQrDescription">Scan this official WeChat code to connect directly.</p>
+        <div><img src="assets/general-manager-wechat-qr.png" alt="WeChat QR code for Abdullah Zaid Eshaq" /></div>
+      </dialog>
+      <div class="toast" id="toast" role="status" aria-live="polite"><iconify-icon icon="solar:check-circle-bold"></iconify-icon><span></span></div>
+    </main>
+    <script src="general-manager.js?v=2"></script>
+  </body>
+</html>
